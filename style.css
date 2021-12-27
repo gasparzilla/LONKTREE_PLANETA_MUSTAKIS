@@ -1,3 +1,7 @@
+body {
+    font-family: Helvetica;
+}
+
 .head-div {
     text-align:center;
     padding:20%;
@@ -5,34 +9,80 @@
     padding-bottom:3%;
     }
     
-    .link-div{ 
-        padding:20%;
-        padding-top:1%;
-        padding-bottom:1%;
+.link-div{ 
+    padding:20%;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+    
+.alink{
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 1px;
+    padding: 20px 0;
+    max-width: 590px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:blue;
+    color:white;
+    text-decoration:none;
+
+}
+    
+.alink:hover{
+    color:blue;
+    background-color:white;
+    border: 2px solid;
+    border-color:blue;
+}
+    
+.copyright{
+    text-align:center;
+}
+
+
+.collapsible {
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(38, 0, 255);
+    color: white;
+    cursor: pointer;
+    padding: 20px 300px;
+    max-width = 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    outline: none;
+    font-size: 15px;
     }
-    
-    .alink{
-        text-align: center;
-        border-radius: 25px;
-        margin-top: 1px;
-        padding: 20px 0;
-        max-width: 590px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        background-color:blue;
-        color:white;
-        text-decoration:none;
-    
+      
+.active, .collapsible:hover {
+    background-color: rgb(8, 0, 114);
     }
-    
-    .alink:hover{
-        color:blue;
-        background-color:white;
-        border: 2px solid;
-        border-color:blue;
+      
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: center;
+    margin-left: 5px;
     }
-    
-    .copyright{
-        text-align:center;
+      
+.active:after {
+    content: "\2212";
+    }
+      
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    }
+
+.vertical-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
     }
